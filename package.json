@@ -1,6 +1,6 @@
 {
   "name": "@cypherlab/import",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "🔧 Import files/modules utility",
   "author": "Louis Grellet <louis.grellet@gmail.com>",
   "license": "ISC",
