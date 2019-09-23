@@ -1,0 +1,45 @@
+{
+  "name": "@cypherlab/import",
+  "version": "0.0.1",
+  "description": "🔧 import utility",
+  "author": "Louis Grellet <louis.grellet@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/cypherlab/import",
+  "source": "src/index.js",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.umd.js",
+  "scripts": {
+    "build": "npx rollup -c",
+    "prepare": "npm run build",
+    "release": "np"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
