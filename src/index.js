@@ -46,7 +46,7 @@ const scriptImport = async (paths, isAsync = true, debug=false) => {
 }
 
 
-console esmImport = async (paths=[], module, debug=false) => {
+const esmImport = async (paths=[], module, debug=false) => {
   if(typeof module == 'string'){
     const moduleString = module
     module = m => m[moduleString]
